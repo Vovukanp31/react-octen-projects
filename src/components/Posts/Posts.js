@@ -15,37 +15,16 @@ const Posts = () => {
     }, [])
 
     return (
-        <div>
+        <div className='posts-container'>
             {
-                // Поміняй посилання на об'єкт, бо у постів інші ключі
                 posts.map(value => {
-                    return <div className='users'>
-                        <div className='user-main-info'>
-                            <p>User id - {value?.id};</p>
-                            <p>Name of user - {value?.name};</p>
-                            <p>Username - {value?.username};</p>
-                            <p>User email - {value?.email};</p>
-                        </div>
+                    return <div className='posts'>
 
-                        <div className='user-loc'>
-                            <p>User address - {`Street: ${value?.address?.street};
-                       Suite: ${value?.address?.suite};
-                       City: ${value?.address?.city};
-                       Zipcode: ${value?.address?.zipcode};`}</p>
-
-                            <p>Geoposition of user - {`Lat: ${value?.address?.geo?.lat};
-                      Lng: ${value?.address?.geo?.lng}`}.</p>
-                        </div>
-
-                        <div className='user-contacts'>
-                            <p>User phone number - {value?.phone};</p>
-                            <p>User website - {value?.website};</p>
-                        </div>
-
-                        <div className='user-company'>
-                            User company - {`Name: ${value?.company?.name};
-                      Catch phrase: ${value?.company?.catchPhrase};
-                      Bs: ${value?.company?.bs}`}.
+                        <div className='posts-info'>
+                            <p><span>User id at post</span> - {value?.userId};</p>
+                            <p><span>id</span> - {value?.id};</p>
+                            <p><span>Title of post</span> - {value?.title};</p>
+                            <p><span>Post body</span> - {value?.body};</p>
                         </div>
 
                     </div>

@@ -1,0 +1,23 @@
+.comments-container {
+    padding: 5px;
+    background-color: dimgray;
+    border: 2px solid coral;
+    border-radius: 5px;
+}
+
+.comments {
+    background-color: darkseagreen;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.comments span {
+    font-weight: bold;
+}

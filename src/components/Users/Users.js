@@ -14,34 +14,35 @@ const Users = () => {
             })
     }, [])
     return (
-        <div>
+        <div className='users-container'>
             {
                 users.map(value => {
                     return <div className='users'>
-                        <div className='user-main-info'>
-                            <p>User id - {value?.id};</p>
-                            <p>Name of user - {value?.name};</p>
-                            <p>Username - {value?.username};</p>
-                            <p>User email - {value?.email};</p>
+
+                        <div>
+                            <p><span>User id</span> - {value?.id};</p>
+                            <p><span>Name of user</span> - {value?.name};</p>
+                            <p><span>Username</span> - {value?.username};</p>
+                            <p><span>User email</span> - {value?.email};</p>
                         </div>
 
-                        <div className='user-loc'>
-                            <p>User address - {`Street: ${value?.address?.street};
+                        <div>
+                            <p><span>User address</span> - {`Street: ${value?.address?.street};
                        Suite: ${value?.address?.suite};
                        City: ${value?.address?.city};
                        Zipcode: ${value?.address?.zipcode};`}</p>
 
-                            <p>Geoposition of user - {`Lat: ${value?.address?.geo?.lat};
+                            <p><span>Geoposition of user</span> - {`Lat: ${value?.address?.geo?.lat};
                       Lng: ${value?.address?.geo?.lng}`}.</p>
                         </div>
 
-                        <div className='user-contacts'>
-                            <p>User phone number - {value?.phone};</p>
-                            <p>User website - {value?.website};</p>
+                        <div>
+                            <p><span>User phone number</span> - {value?.phone};</p>
+                            <p><span>User website</span> - {value?.website};</p>
                         </div>
 
-                        <div className='user-company'>
-                            User company - {`Name: ${value?.company?.name};
+                        <div>
+                            <span>User company</span> - {`Name: ${value?.company?.name};
                       Catch phrase: ${value?.company?.catchPhrase};
                       Bs: ${value?.company?.bs}`}.
                         </div>

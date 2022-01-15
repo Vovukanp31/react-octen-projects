@@ -1,0 +1,23 @@
+.posts-container {
+    overflow-x: scroll;
+    max-height: 500px;
+    border-radius: 5px;
+}
+
+.posts-container::-webkit-scrollbar {
+    display: none;
+}
+
+.posts {
+    background-color: bisque;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.posts span {
+    font-weight: bold;
+}

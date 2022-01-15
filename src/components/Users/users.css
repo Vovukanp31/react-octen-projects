@@ -1,0 +1,26 @@
+.users-container {
+    overflow-x: scroll;
+    max-height: 500px;
+    border-radius: 5px;
+}
+
+.users-container::-webkit-scrollbar {
+    display: none;
+}
+
+.users {
+    background-color: lightblue;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 2px solid bisque;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.users span {
+    font-weight: bold;
+}
