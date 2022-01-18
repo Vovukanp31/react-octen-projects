@@ -9,6 +9,10 @@ const getUsers = () => {
   return axiosInstance.get('/users');
 }
 
-export default {
-    getUsers
+const getUser = (id) => {
+  return axiosInstance.get('/users/' + id);
+}
+
+export {
+    getUsers, getUser
 }
