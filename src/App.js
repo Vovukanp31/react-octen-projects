@@ -25,7 +25,6 @@ function App() {
 
                 {
                     users.map(user => {
-                        console.log(user)
                         return <div className='user-card'>
                             <UsersComponent key={user.id} obj={user} chosenUser={chosenUser}/>
                         </div>
@@ -33,7 +32,6 @@ function App() {
                 }
 
                 <UserComponent chosenUserObj={chosenUserObj}/>
-
 
             </div>
 
