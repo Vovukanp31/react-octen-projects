@@ -1,14 +1,13 @@
 import React from 'react';
 import css from './User.module.css'
 
-const User = ({user, chooseUser}) => {
+const User = ({user}) => {
 
-    const {name} = user;
+    const {name, username, email} = user;
 
     return (
         <div className={css.dFlex}>
-            <div>{name}</div>
-            <button onClick={() => chooseUser(user)}>Details</button>
+            <div>{name} - {username} - {email}</div>
         </div>
     );
 };
