@@ -3,5 +3,5 @@ import {urls} from "../configs/urls";
 
 export const usersService = {
     getAll: () => axiosService.get(urls.users).then(value => value.data),
-    getUser: (id) => axiosService.get(urls.users).then(value => value.data)
+    getUser: (id) => axiosService.get(`${urls.users}/${id}`).then(value => value.data)
 }
