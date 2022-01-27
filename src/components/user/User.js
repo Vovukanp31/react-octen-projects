@@ -4,7 +4,6 @@ import {NavLink} from "react-router-dom";
 const User = ({user}) => {
 
     const {id, name} = user;
-    console.log(user);
     return (
         <div>
             <NavLink key={id} to={`${id}`} state={user}>User id:<span>{id}</span>, Name of the user:{name}.   <span>Get details</span></NavLink>
