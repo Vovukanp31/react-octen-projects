@@ -1,0 +1,28 @@
+.module {
+    background-color: lightblue;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.module a {
+    text-decoration: none;
+    display: flex;
+    margin: 10px 50px;
+    font-size: 20px;
+    color: bisque;
+}
+
+.module a:hover {
+    color: coral;
+    font-size: 24px;
+    transition: 3ms;
+    margin: 6px 46px;
+}
+
+.module a[class = 'active'] {
+    font-size: 24px;
+    margin: 6px 46px;
+    color: red;
+}

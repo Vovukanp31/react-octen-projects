@@ -1,0 +1,20 @@
+.postLink a {
+    text-decoration: none;
+    color: coral;
+    border: 2px solid black;
+    display: block;
+    text-align: center;
+}
+
+.postLink a:hover {
+    background-color: lightblue;
+    transition: 3ms;
+}
+
+.postLink a[class = 'active'] {
+    color: red;
+}
+
+.postLink span {
+    font-weight: bold;
+}
