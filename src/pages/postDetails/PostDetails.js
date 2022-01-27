@@ -1,20 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
-import {Outlet, useLocation} from "react-router-dom";
+import {Outlet, useLocation, useNavigate} from "react-router-dom";
+import css from './postDetails.module.css'
 
 const PostDetails = () => {
 
-    const {state:post} = useLocation()
+    let {state:post} = useLocation()
 
     const {id, userId, title, body} = post;
 
+    let commentsNav = useNavigate();
+
     return (
-        <div>
+        <div className={css.postDetailsContainer}>
+            <div>
             <h2>Post id: {id}</h2>
             <h3>User id: {userId}</h3>
             <p>Title of post: {title}</p>
             <p>Body of Post: {body}</p>
-            <Outlet/>
+                <button onClick={() => {
+                    commentsNav(`comments`, {state:id});
+                }}>Show comments for this post</button>
+            </div>
+                <Outlet/>
         </div>
     );
 };

@@ -7,7 +7,7 @@ const Post = ({post}) => {
     const {id} = post;
     return (
         <div className={css.postLink}>
-            <NavLink key={id} to={`/posts/${id}`} state={post}>Post No:<span>{id}</span>.   <span>Get details</span></NavLink>
+            <NavLink key={id} to={`${id}`} state={post}>Post No:<span>{id}</span>.   <span>Get details</span></NavLink>
         </div>
     );
 };

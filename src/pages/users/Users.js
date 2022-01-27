@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {usersService} from "../../services/users.service";
+import User from "../../components/user/User";
 
 const Users = () => {
+
+    const [users, setUsers] = useState([])
+
+    useEffect(() => {
+        usersService.getAll().then(value => setUsers(value));
+    }, [])
+
     return (
         <div>
-            Display all users with link on it
+            {
+                users.map(user => <User key={user.id} user={user}/>)
+            }
         </div>
     );
 };
