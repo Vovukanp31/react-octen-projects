@@ -1,6 +1,6 @@
 .module {
     background-color: lightblue;
-    min-height: 40px;
+    min-height: 5vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,11 +18,11 @@
     color: coral;
     font-size: 24px;
     transition: 3ms;
-    margin: 6px 46px;
+    margin: 8px 46px;
 }
 
 .module a[class = 'active'] {
     font-size: 24px;
-    margin: 6px 46px;
+    margin: 8px 46px;
     color: red;
 }

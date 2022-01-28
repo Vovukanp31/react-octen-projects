@@ -1,0 +1,20 @@
+.mainContainer {
+    display: flex;
+    column-gap: 10px;
+    margin-right: 4px;
+}
+
+.allUsers {
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 60px;
+    width: 40%;
+    max-height: 89vh;
+    overflow-y: scroll;
+}
+
+.allUsers::-webkit-scrollbar {
+    display: none;
+}

@@ -1,4 +1,8 @@
-.postLink a {
+.albumElem p {
+font-weight: bold;
+}
+
+.albumElem a {
     text-decoration: none;
     color: coral;
     border: 2px solid black;
@@ -7,15 +11,11 @@
     text-align: center;
 }
 
-.postLink a:hover {
-    background-color: lightblue;
+.albumElem a:hover {
+    background-color: bisque;
     transition: 3ms;
 }
 
-.postLink a[class = 'active'] {
+.albumElem a[class = 'active'] {
     color: red;
-}
-
-.postLink span {
-    font-weight: bold;
 }

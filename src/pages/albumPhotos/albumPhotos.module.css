@@ -1,0 +1,10 @@
+.photosElementsContainer {
+    margin-top: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 55vh;
+}
+
+.photosElementsContainer::-webkit-scrollbar {
+    display: none;
+}

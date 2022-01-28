@@ -1,13 +1,21 @@
 .allPosts {
-    margin-top: 30px;
+    margin-top: 4vh;
     display: flex;
     flex-direction: column;
+    column-gap: 10px;
     row-gap: 10px;
     min-width: 40%;
-    max-height: 550px;
+    max-height: 86vh;
     overflow-y: scroll;
+    padding: 10px;
+}
+
+.allPosts::-webkit-scrollbar {
+    display: none;
 }
 
 .mainContainer {
     display: flex;
+    column-gap: 10px;
+    margin-right: 4px;
 }

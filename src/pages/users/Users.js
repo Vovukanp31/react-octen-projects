@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
+
 import {usersService} from "../../services/users.service";
 import User from "../../components/user/User";
+import {Outlet} from "react-router-dom";
+import css from './users.module.css'
 
 const Users = () => {
 
@@ -11,10 +14,14 @@ const Users = () => {
     }, [])
 
     return (
-        <div>
-            {
-                users.map(user => <User key={user.id} user={user}/>)
-            }
+        <div className={css.mainContainer}>
+
+            <div className={css.allUsers}>
+                {
+                    users.map(user => <User key={user.id} user={user}/>)
+                }
+            </div>
+            <Outlet/>
         </div>
     );
 };

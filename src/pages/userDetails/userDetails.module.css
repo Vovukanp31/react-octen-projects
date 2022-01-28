@@ -1,0 +1,21 @@
+.userDetailsContainer {
+    margin-top: 4vh;
+    width: 60%;
+}
+
+.userDetailsContainerElements {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 30vh;
+}
+
+.userDetailsContainerElements::-webkit-scrollbar {
+    display: none;
+}

@@ -1,3 +1,18 @@
 .postDetailsContainer {
-    max-width: 50%;
+margin-top: 4vh;
+    max-height: 30vh;
+}
+
+.postDetailsContainerElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.postDetailsContainerElements span > h3 {
+    margin-top: 0;
 }

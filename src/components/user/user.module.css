@@ -1,4 +1,4 @@
-.postLink a {
+.userLink a {
     text-decoration: none;
     color: coral;
     border: 2px solid black;
@@ -7,15 +7,24 @@
     text-align: center;
 }
 
-.postLink a:hover {
+.userLink a:hover {
     background-color: lightblue;
     transition: 3ms;
 }
 
-.postLink a[class = 'active'] {
+.userLink a[class = 'active'] {
     color: red;
 }
 
-.postLink span {
+.userLink a span {
     font-weight: bold;
+}
+
+.userLink {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 5px;
 }
