@@ -6,7 +6,7 @@ const User = ({user, chooseUser}) => {
     const {name} = user;
 
     return (
-        <div className={css.dFlex}>
+        <div className={css.user}>
             <div>{name}</div>
             <button onClick={() => chooseUser(user)}>Details</button>
         </div>

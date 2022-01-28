@@ -1,10 +1,10 @@
 import React from 'react';
 import Post from "../post/Post";
+import css from './posts.module.css'
 
 const Posts = ({posts}) => {
-console.log(posts)
     return (
-        <div>
+        <div className={css.postsContainer}>
             {
                 posts.map(post => <Post key={post.id} post={post}/>)
             }

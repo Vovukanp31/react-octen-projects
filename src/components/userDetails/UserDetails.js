@@ -1,11 +1,13 @@
 import React from 'react';
 
+import css from './userDetails.module.css'
+
 const UserDetails = ({user, getUserId}) => {
 
     const {id, name, username, address, phone, email, website} = user;
 
     return (
-        <div>
+        <div className={css.userDetailsContainer}>
             <div>User id - {id}</div>
             <div>Name of user - {name}</div>
             <div>Username - {username}</div>

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {userService} from "../../services/user.service";
 import User from "../user/User";
+import css from './users.module.css'
 
 const Users = ({chooseUser}) => {
 
@@ -11,7 +12,7 @@ const Users = ({chooseUser}) => {
     }, [])
 
     return (
-        <div>
+        <div className={css.usersContainer}>
             {
                 users.map(value => {
                     return <User key={value.id} user={value} chooseUser={chooseUser}/>
