@@ -1,4 +1,4 @@
-import {Routes, Route} from "react-router-dom";
+import {Routes, Route, Navigate} from "react-router-dom";
 
 import css from './App.module.css'
 import Users from "./pages/users/Users";
@@ -17,6 +17,8 @@ function App() {
 
             <Routes>
                 <Route path={'/'} element={<Layout/>}>
+
+                    <Route index element={<Navigate to={'posts'}/>}/>
 
                     <Route path={'posts'} element={<Posts/>}>
                         <Route path={':id'} element={<PostDetails/>}>
