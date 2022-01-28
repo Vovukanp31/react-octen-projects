@@ -9,9 +9,13 @@ font-weight: bold;
     border-radius: 3px;
     display: block;
     text-align: center;
+    padding: 3px;
+    background-color: white;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 .albumElem a:hover {
+    color: #fc501c;
     background-color: bisque;
     transition: 3ms;
 }

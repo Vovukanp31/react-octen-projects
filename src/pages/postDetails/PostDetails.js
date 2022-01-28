@@ -1,6 +1,6 @@
 import React from 'react';
-
 import {Outlet, useLocation, useNavigate} from "react-router-dom";
+
 import css from './postDetails.module.css'
 
 const PostDetails = () => {

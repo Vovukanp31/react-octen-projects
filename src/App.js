@@ -21,13 +21,16 @@ function App() {
                     <Route index element={<Navigate to={'posts'}/>}/>
 
                     <Route path={'posts'} element={<Posts/>}>
+
                         <Route path={':id'} element={<PostDetails/>}>
                             <Route path={'comments'} element={<CommentsOfPost/>}/>
                         </Route>
 
                     </Route>
 
+
                     <Route path={'users'} element={<Users/>}>
+
                         <Route path={':id'} element={<UserDetails/>}>
                             <Route path={'posts'} element={<UserPosts/>}/>
                         </Route>

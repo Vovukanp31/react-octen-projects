@@ -5,6 +5,7 @@
     border-radius: 3px;
     display: block;
     text-align: center;
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 .userLink a:hover {
@@ -27,4 +28,8 @@
     flex-direction: column;
     row-gap: 5px;
     padding: 5px;
+}
+
+.userLink button {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
 }

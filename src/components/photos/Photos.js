@@ -1,4 +1,5 @@
 import React from 'react';
+
 import css from './photos.module.css'
 
 const Photos = ({photoItem:{title, thumbnailUrl}}) => {
