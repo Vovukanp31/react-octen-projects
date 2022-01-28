@@ -1,0 +1,6 @@
+.formContainer {
+display: flex;
+    justify-content: space-around;
+    background-color: darkseagreen;
+    padding: 5px;
+}

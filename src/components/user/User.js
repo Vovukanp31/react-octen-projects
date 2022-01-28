@@ -6,7 +6,7 @@ const User = ({user}) => {
     const {name, username, email} = user;
 
     return (
-        <div className={css.dFlex}>
+        <div className={css.userContainer}>
             <div>{name} - {username} - {email}</div>
         </div>
     );

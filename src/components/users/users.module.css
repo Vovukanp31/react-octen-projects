@@ -1,0 +1,10 @@
+.usersContainer {
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 50px;
+    min-height: 80vh;
+}

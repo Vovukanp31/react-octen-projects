@@ -1,3 +1,5 @@
-.dFlex {
-    display: flex;
+.userContainer {
+border: 2px solid black;
+    padding: 5px;
+    background-color: darkseagreen;
 }

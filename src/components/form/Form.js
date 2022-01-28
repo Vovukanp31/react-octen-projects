@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import css from './form.module.css'
+
 const Form = ({getFilter}) => {
 
     const [form, setForm] = useState({name:'', username:'', email:''});
@@ -12,7 +14,7 @@ const Form = ({getFilter}) => {
 
     return (
         <div>
-            <form>
+            <form className={css.formContainer}>
 
                 <label>
                     Name: <input type='text' name={'name'} value={form.name} onChange={formHandler}/>
