@@ -17,7 +17,6 @@ const AlbumPhotos = () => {
 
     return (
         <div className={css.photosElementsContainer}>
-            <span></span>
             {
                 photos.map(value => <Photos key={value.id} photoItem={value}/>)
             }
