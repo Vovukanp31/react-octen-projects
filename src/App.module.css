@@ -1,0 +1,16 @@
+body {
+    background-color: dimgray;
+}
+.counter {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: coral;
+    text-align: center;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    row-gap: 20px;
+}
