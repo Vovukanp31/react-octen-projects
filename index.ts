@@ -37,6 +37,8 @@
 
 import {IMission} from "./interfaces/missionStarlink.interface";
 
+import {IUser} from "./interfaces/user.interface";
+
 let obj: IMission = {
     mission_name: "Starlink-15 (v1.0)",
     launch_date_local: "2020-10-24T11:31:00-04:00",
@@ -102,24 +104,27 @@ console.log(obj);
 //
 //
 //-------------------------------------------------------------------------------------------
-const user: { name: string, age: number, gender: string } = {
+
+const user: IUser = {
     name: "Max",
     age: 18,
     gender: 'male'
 }
 
-function sum(a:number,b:number):number{
-    return a+b
+function sum(a: number, b: number): number {
+    return a + b
 }
-function showSum(a:number,b:number):void{
+
+function showSum(a: number, b: number): void {
     console.log(a + b);
 }
-//
-function incAge(someUser:{age:number}, inc:number):object{
-    someUser.age+=inc
-    return someUser
+
+function incAge(IUser, inc: number): object {
+    IUser.age += inc
+    return IUser
 }
-//
-console.log(sum(1, 2));
-showSum(2,3)
-incAge(user, 2)
+
+
+sum(1, 2);
+showSum(2, 3);
+incAge(user, 2);
