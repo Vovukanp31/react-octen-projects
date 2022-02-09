@@ -3,6 +3,7 @@ import {useForm} from "react-hook-form";
 
 import Cats from "./components/cats/Cats";
 import Dogs from "./components/dogs/Dogs";
+import css from './app.module.css';
 
 const reducer = (state, action) => {
 
@@ -38,6 +39,7 @@ function App() {
             id: new Date().getTime()
         }
         dispatch({type: 'addDog', payload: {dog}})
+        reset()
     };
 
     const deleteDog = (id) => {
@@ -50,26 +52,32 @@ function App() {
             id: new Date().getTime()
         }
         dispatch({type: 'addCat', payload: {cat}})
+        reset()
     };
 
     const deleteCat = (id) => {
         dispatch({type:'deleteCat', payload: {id}})
     }
 
-    const {register, handleSubmit} = useForm()
+    const {register, handleSubmit, reset} = useForm()
 
     return (
         <div className="App">
 
-            <form>
-                <input type="text" {...register('cat')}/>
-                <button onClick={handleSubmit(addCat)}>add cat</button>
+            <form className={css.form}>
 
-                <input type="text" {...register('dog')}/>
-                <button onClick={handleSubmit(addDog)}>add dog</button>
+                <div>
+                    <input type="text" {...register('cat')}/>
+                    <button onClick={handleSubmit(addCat)}>add cat</button>
+                </div>
+
+                <div>
+                    <input type="text" {...register('dog')}/>
+                    <button onClick={handleSubmit(addDog)}>add dog</button>
+                </div>
             </form>
 
-            <div>
+            <div className={css.dogsCatsContaier}>
                 <Cats cats={state.cats} deleteCat={deleteCat}/>
                 <Dogs dogs={state.dogs} deleteDog={deleteDog}/>
             </div>
